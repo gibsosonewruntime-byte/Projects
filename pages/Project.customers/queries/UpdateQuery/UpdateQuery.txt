@@ -1,0 +1,11 @@
+UPDATE project."customers" SET
+		"customer_code" = '{{update_form.fieldState.customer_code.isVisible ? update_form.formData.customer_code : update_form.sourceData.customer_code}}',
+		"first_name" = '{{update_form.fieldState.first_name.isVisible ? update_form.formData.first_name : update_form.sourceData.first_name}}',
+    "last_name" = '{{update_form.fieldState.last_name.isVisible ? update_form.formData.last_name : update_form.sourceData.last_name}}',
+		"phone" = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
+		"email" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
+		"address" = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',
+		"membership_type" = '{{update_form.fieldState.membership_type.isVisible ? update_form.formData.membership_type : update_form.sourceData.membership_type}}',
+		"registered_date" = '{{update_form.fieldState.registered_date.isVisible ? update_form.formData.registered_date : update_form.sourceData.registered_date}}',
+		"status" = '{{update_form.fieldState.status.isVisible ? update_form.formData.status : update_form.sourceData.status}}'
+WHERE "customer_id" = {{data_table.selectedRow.customer_id}};
