@@ -404,9 +404,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.original_price))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "original_price",
           "isCustomField": false,
@@ -418,7 +418,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "original_price",
           "position": 5,
-          "sourceData": 2500
+          "sourceData": ""
         },
         "rental_price": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -426,9 +426,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rental_price))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "rental_price",
           "isCustomField": false,
@@ -440,7 +440,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rental_price",
           "position": 6,
-          "sourceData": 450
+          "sourceData": ""
         },
         "size": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
