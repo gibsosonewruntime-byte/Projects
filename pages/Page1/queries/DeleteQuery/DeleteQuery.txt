@@ -1,0 +1,2 @@
+DELETE FROM project."garments"
+  WHERE "garment_id" = {{data_table.triggeredRow.garment_id}};

@@ -1,0 +1,12 @@
+UPDATE project."garments" SET
+		"garment_code" = '{{update_form.fieldState.garment_code.isVisible ? update_form.formData.garment_code : update_form.sourceData.garment_code}}',
+		"garment_name" = '{{update_form.fieldState.garment_name.isVisible ? update_form.formData.garment_name : update_form.sourceData.garment_name}}',
+    "category" = '{{update_form.fieldState.category.isVisible ? update_form.formData.category : update_form.sourceData.category}}',
+		"size" = '{{update_form.fieldState.size.isVisible ? update_form.formData.size : update_form.sourceData.size}}',
+		"color" = '{{update_form.fieldState.color.isVisible ? update_form.formData.color : update_form.sourceData.color}}',
+		"original_price" = '{{update_form.fieldState.original_price.isVisible ? update_form.formData.original_price : update_form.sourceData.original_price}}',
+		"rental_price" = '{{update_form.fieldState.rental_price.isVisible ? update_form.formData.rental_price : update_form.sourceData.rental_price}}',
+		"status" = '{{update_form.fieldState.status.isVisible ? update_form.formData.status : update_form.sourceData.status}}',
+		"image_url" = '{{update_form.fieldState.image_url.isVisible ? update_form.formData.image_url : update_form.sourceData.image_url}}',
+		"created_at" = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}'
+WHERE "garment_id" = {{data_table.selectedRow.garment_id}};

@@ -1,0 +1,22 @@
+INSERT INTO project."garments" (
+	"garment_code",
+	"garment_name",
+	"category",
+	"size",
+	"color",
+	"original_price",
+	"rental_price",
+	"status",
+	"image_url",
+	"created_at")
+VALUES (
+	'{{insert_form.formData.garment_code}}',
+	'{{insert_form.formData.garment_name}}',
+	'{{insert_form.formData.category}}',
+	'{{insert_form.formData.size}}',
+	'{{insert_form.formData.color}}',
+	'{{insert_form.formData.original_price}}',
+	'{{insert_form.formData.rental_price}}',
+	'{{insert_form.formData.status}}',
+	'{{insert_form.formData.image_url}}',
+	'{{insert_form.formData.created_at}}');
